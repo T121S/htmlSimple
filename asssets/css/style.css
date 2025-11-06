@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(203, 232, 240);
+}
+
+header {
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+    color: #3eb5dd;
+}
+
+.navbar {
+    background-color: #f0afaf;
+    padding: 10px;
+}
+.navbar a ::first-line{
+    color: #245be5;
+}
+
+
+h1 {
+    color: rgb(250, 211, 34);
+}
+
+h2 {
+    color: rgb(234, 81, 10);
+}
+
+h3 {
+    color: rgb(10, 136, 247);
+}
+
+p {
+    color: rgb(189, 33, 33);
+}
+
