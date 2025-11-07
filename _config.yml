@@ -1,7 +1,14 @@
-# Menentukan folder Pages sebagai sumber (base) situs.
-# Ubah "htmlSimple" sesuai dengan nama repositori Anda
+# WAJIB: Atur theme agar Jekyll aktif
+theme: jekyll-theme-minimal
+
+# WAJIB: Base URL harus diatur sesuai nama repo Anda
 baseurl: "/htmlSimple" 
 
-# Menentukan bahwa folder Pages yang digunakan untuk file HTML
+# Opsional, tapi coba pastikan semua file di folder Pages diproses
+# Pastikan ada SPASI setelah tanda hubung
 include: 
   - Pages
+
+# Opsional: Agar Jekyll tidak mengganggu folder assets
+exclude:
+  - assets/
