@@ -1,9 +1,0 @@
-# WAJIB: Atur theme ke null untuk menonaktifkan tema default (orderedlist)
-theme: null
-
-# WAJIB: Base URL harus diatur sesuai nama repo Anda
-baseurl: "/htmlSimple" 
-
-# Opsional: Untuk memastikan file di folder Pages diproses
-include:
-  - Pages
