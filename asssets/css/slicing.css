@@ -4,31 +4,34 @@
 }
 
 body {
-    font-family: Arial;
+    font-family: sans-serif;
     padding: 0 10px; 
 }
 
 .header {
     padding: 10px 0;
     justify-content: space-between;
-    align-items: center;
-    border: 1px solid;
+    border: 3px solid;
 }
 
 .nama-web {
-    font-size: 2em;
     font-weight: bold;
-    padding-left: 15px;
+    padding-left: 25px;
     padding-bottom: 10px;
 }
 
 .navbar a {
     margin-left: 15px;
-    font-size: 1em;
+    border-left: 3px solid black;
+    padding-left: 10px;
+}
+
+.navbar a:first-child {
+    border-left: none;
 }
 
 .hero-image {
-    border: 1px solid;
+    border: 3px solid;
     text-align: center;
     margin: 15px 0;
     padding: 40px 0;
@@ -39,20 +42,16 @@ body {
 }
 
 .artikel {
-    padding: 20px 0;
-    border: 1px solid;
+    padding: 20px 0 0 20px;
+    border: 3px solid;
 }
 
 .artikel span {
     color: rgb(21, 73, 245);
 }
 
-.judul-artikel {
-    font-size: 2em;
-}
 
 .penulis-artikel {
-    font-size: 1em;
     margin-bottom: 10px;
 }
 
@@ -67,6 +66,4 @@ body {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    font-size: 2em;
-    margin-top: 20px;
 }
