@@ -1,0 +1,7 @@
+# Menentukan folder Pages sebagai sumber (base) situs.
+# Ubah "htmlSimple" sesuai dengan nama repositori Anda
+baseurl: "/htmlSimple" 
+
+# Menentukan bahwa folder Pages yang digunakan untuk file HTML
+include: 
+  - Pages
