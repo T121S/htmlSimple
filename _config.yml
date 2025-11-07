@@ -1,14 +1,9 @@
-# WAJIB: Atur theme agar Jekyll aktif
-theme: jekyll-theme-minimal
+# WAJIB: Atur theme ke null untuk menonaktifkan tema default (orderedlist)
+theme: null
 
 # WAJIB: Base URL harus diatur sesuai nama repo Anda
 baseurl: "/htmlSimple" 
 
-# Opsional, tapi coba pastikan semua file di folder Pages diproses
-# Pastikan ada SPASI setelah tanda hubung
-include: 
+# Opsional: Untuk memastikan file di folder Pages diproses
+include:
   - Pages
-
-# Opsional: Agar Jekyll tidak mengganggu folder assets
-exclude:
-  - assets/
