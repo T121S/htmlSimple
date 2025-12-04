@@ -1,34 +1,175 @@
+/* --- GLOBAL RESET & TYPOGRAPHY --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
 body {
-    background-color: rgb(203, 232, 240);
-}
-
-header {
     font-family: 'Arial', sans-serif;
+    /* Warna latar belakang: Putih Off-White */
+    background-color: #f5f5f5; 
+    /* Warna teks utama: Hitam gelap */
+    color: #1e1e1e;
+    /* Tinggi minimum untuk konten */
+    min-height: 800px; 
+}
+
+a {
+    text-decoration: none;
+    /* Warna aksen merah */
+    color: #f21c1c; 
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #c91717; 
+}
+
+/* --- HEADER & NAVIGATION --- */
+.header {
+    /* Warna background: Hitam gelap */
+    background-color: #1e1e1e;
+    /* Warna teks: Putih */
+    color: #f5f5f5;
+    padding: 10px 40px; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+}
+
+.header-icons i {
+    color: #f5f5f5; /* Warna ikon putih */
+}
+
+.navbar a {
+    color: #f5f5f5;
+    margin-left: 20px;
+    padding: 5px 0;
+}
+
+.navbar a i {
+    color: #f21c1c !important; /* Warna ikon navigasi merah */
+}
+
+/* --- MAIN CONTENT & HERO SECTION --- */
+.main-content {
+    padding: 40px 40px;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.hero-left {
+    max-width: 600px;
+}
+
+.nama-lengkap {
+    font-size: 48px; 
+    margin-bottom: 10px;
+}
+
+.nama-belakang i {
+    color: #f21c1c;
+}
+
+.member-komunitas {
+    font-size: 19px;
+    color: #f21c1c;
     margin-bottom: 20px;
-    color: #3eb5dd;
 }
 
-.navbar {
-    background-color: #f0afaf;
-    padding: 10px;
-}
-.navbar a ::first-line{
-    color: #245be5;
+.deskripsi-singkat {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 600px;
 }
 
-
-h1 {
-    color: rgb(250, 211, 34);
+.btn-talk {
+    display: inline-block;
+    background-color: #f21c1c;
+    color: #f5f5f5;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
 }
 
-h2 {
-    color: rgb(234, 81, 10);
+.hero-right img {
+    border-radius: 50%; 
+    border: 5px solid #f21c1c;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px; 
+    height: 300px;
+    flex-shrink: 0; 
 }
 
-h3 {
-    color: rgb(10, 136, 247);
+/* --- PROJECT SECTION --- */
+.project-hdr {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 20px;
+    color: #f21c1c;
 }
 
-p {
-    color: rgb(189, 33, 33);
+.project-img {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.project-img img {
+    display: inline-block; 
+    max-width: 450px; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+/* --- CONTACT SECTION --- */
+.contact {
+    text-align: center;
+    padding: 50px 40px;
+    border-top: 1px solid #ddd;
+}
+
+/* --- FOOTER --- */
+.site-footer {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    padding: 20px 40px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.footer-social, .footer-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a, .footer-nav a {
+    color: #f5f5f5;
+}
+
+.footer-social a:hover, .footer-nav a:hover {
+    color: #f21c1c;
 }

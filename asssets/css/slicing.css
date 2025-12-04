@@ -1,69 +1,103 @@
+/* --- GLOBAL RESET & BOX MODEL FIX --- */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
 
 body {
     font-family: sans-serif;
-    padding: 0 10px; 
+    padding: 0 40px; /* Padding horizontal tetap */
 }
 
+/* --- HEADER --- */
 .header {
     padding: 10px 0;
-    justify-content: space-between;
-    border: 3px solid;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-bottom: 1px solid #ccc; 
 }
 
 .nama-web {
     font-weight: bold;
-    padding-left: 25px;
-    padding-bottom: 10px;
+    font-size: 24px;
 }
 
+/* --- NAVBAR (Link Navigasi dengan Pemisah) --- */
 .navbar a {
-    margin-left: 15px;
-    border-left: 3px solid black;
-    padding-left: 10px;
+    display: inline-block; 
+    text-decoration: underline; 
+    color: #0066cc; /* Warna link biru */
+    font-size: 14px;
+    
+    /* Garis Pemisah Vertikal */
+    border-left: 1px solid #000; 
+    padding: 0 10px; 
+    margin: 0; 
 }
 
+/* Menghilangkan garis pemisah pada item pertama */
 .navbar a:first-child {
-    border-left: none;
+    border-left: none; 
+    padding-left: 0; 
 }
 
+/* --- HERO IMAGE --- */
 .hero-image {
-    border: 3px solid;
+    border: 1px solid #ccc; 
     text-align: center;
-    margin: 15px 0;
-    padding: 40px 0;
+    margin: 15px 0; 
+    padding: 40px 0; 
+    height: 200px; 
+    position: relative;
+    overflow: hidden; 
+    background-color: #f9f9f9; 
 }
 
-.hero-image img {
-    height: auto; 
+.hero-image::before {
+    content: "hero image";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Menggunakan margin negatif untuk menengahkan (mengganti transform) */
+    margin-top: -15px; 
+    margin-left: -65px; 
+    font-size: 30px;
+    color: #000;
+    opacity: 0.2; 
 }
 
+/* --- ARTIKEL --- */
 .artikel {
-    padding: 20px 0 0 20px;
-    border: 3px solid;
+    padding: 20px 0; 
 }
 
-.artikel span {
-    color: rgb(21, 73, 245);
+.judul-artikel {
+    font-size: 28px;
+    margin-bottom: 5px;
 }
-
 
 .penulis-artikel {
-    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 5px;
 }
 
 .artikel .isi-artikel {
     margin-bottom: 15px;
-    line-height: 1.5; 
+    line-height: 1.6; 
     text-align: justify; 
 }
 
+/* --- FOOTER --- */
 .footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    font-size: 14px;
+    margin-top: 40px;
 }
